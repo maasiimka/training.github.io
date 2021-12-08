@@ -66,10 +66,18 @@ img{
     border-color: var(--second-color);
 }
 
+.button.primary:hover{
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
 .button.secondary{
     background-color: var(--second-color);
     color: var(--main-color);
     border-color: var(--main-color);
+}
+
+.button.secondary:hover{
+background-color: var(--bg-color);
 }
 /* utilite */
 
@@ -388,7 +396,7 @@ img{
 
 }
 
-/* social network */
+/* socials*/
 
 .social-section{
     padding-bottom: 150px;
@@ -397,6 +405,22 @@ img{
 .social-list{
     display: flex;
     flex-wrap: wrap;
+}
+
+.gradient {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradient:hover:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background-color: rgba(51, 51, 51, 0.4);    
 }
 
 /* post */

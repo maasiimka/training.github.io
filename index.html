@@ -137,26 +137,25 @@
             </div>
         </section>
 
-        <!--    <ul class="social-list">
-                    <li><a href=""><img src="./image/gallery/video1.jpg" alt="" width="555" height="300"></a></li>
-                    <li><a href=""><img src="./image/gallery/image1.jpg" alt="" width="278" height="300"></a></li>
-                    <li><a href=""><img src="./image/gallery/image2.jpg" alt="" width="277" height="300"></a></li>
-                    <li><a href=""><img src="./image/gallery/image3.jpg" alt="" width="278" height="300"></a></li>
-                    <li><a href=""><img src="./image/gallery/image4.jpg" alt="" width="277" height="300"></a></li>
-                    <li><a href=""><img src="./image/gallery/video2.jpg" alt="" width="555" height="300"></a></li>
-                </ul> -->
-
         <!-- ПОЧТА -->
 
         <section class="post-section">
             <div class="container">
                 <p class="subtitle">Полезные советы и персональный предложения</p>
                 <h2 class="title">Эксклюзивная рассылка</h2>
-                <ul>
-                    <li class="text">Личный менеджер</li>
-                    <li class="text">Доставка и оформление</li>
-                    <li class="text">Индивидуальный дизайн</li>
-                </ul>
+                <div class="mail-container">
+                    <ul>
+                        <li class="text">Личный менеджер</li>
+                        <li class="text">Доставка и оформление</li>
+                        <li class="text">Индивидуальный дизайн</li>
+                    </ul>
+                    <div>
+                        <form class="form js-speaker-form">
+                            <input type="email" name="mail" placeholder="ВАШ E-MAIL">
+                            <button class="button-form">Отправить</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -218,5 +217,19 @@
             <li><a href="https://github.com/maasiimka">Сделано github.com/maasiimka</a></li>
         </ul>
     </footer>
+
+    <script>
+        (() => {
+          document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+    
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+          });
+        })();
+      </script>
 </body>
 </html>

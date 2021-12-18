@@ -1,0 +1,49 @@
+.hero-section{
+    background-color: $main-color;
+    margin-top: 79px;
+    padding-bottom: 30px;
+    padding-top: 523px;
+    text-align: center;
+
+    background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.hero-title{
+    color: $second-color;
+    
+    font-family: noto-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.36;
+
+    margin-bottom: 50px;
+}
+
+.line{
+   padding-bottom: 80px; 
+   margin-bottom: 30px;
+   border-bottom: 1px solid $second-color;
+}
+
+.partners{
+    display: flex;
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & > li{
+        display: inline-block;
+        padding-right: 14.5px;
+        margin-right: 14.5px;
+        border-right: 1px solid $second-color;    
+        
+        &:last-child{
+            padding-right: 0;
+            margin-right: 0;
+            border: none;
+        }
+
+    }
+}

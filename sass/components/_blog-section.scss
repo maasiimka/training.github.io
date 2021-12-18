@@ -1,0 +1,40 @@
+.blog-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.article-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    & a{
+        display: inline-block;
+        width: 350px;
+        height: 370px;
+        padding-top: 248px;
+        padding-right: 71px;
+        padding-left: 71px;
+    
+        color: $second-color;
+        background-color: $main-color;
+    
+        font-size: 21px;
+        line-height: 1.4;
+    
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs.jpg);
+    
+    }
+
+}
+
+.article-list>:first-child a{
+    padding-right: 98px;
+    padding-left: 98px;
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches.jpg);
+}
+
+.article-list>:last-child a{
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings.jpg);
+
+}

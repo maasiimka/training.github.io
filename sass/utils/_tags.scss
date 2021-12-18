@@ -1,0 +1,38 @@
+
+    body{
+        color: $main-color;
+        background-color: $bg-color;
+        font-family: raleway;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: $main-color;
+        padding: 0;
+        margin: 0;
+      }
+      
+      p, h1, h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+    
+    span{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+      
+    img{
+        display: block;
+    }

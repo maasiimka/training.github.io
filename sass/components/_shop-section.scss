@@ -1,0 +1,14 @@
+.shop-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    color: $second-color;
+    background-color: $main-color;
+    
+    background-image: url(../image/background/background1.jpg);
+
+    & .text{
+        margin-bottom: 60px;
+    }
+
+}

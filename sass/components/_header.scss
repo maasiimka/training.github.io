@@ -1,0 +1,19 @@
+.header-section{
+    background-color: $main-color;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+}

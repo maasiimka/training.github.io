@@ -1,0 +1,34 @@
+.social-section{
+    padding-bottom: 150px;
+}
+
+.social-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gradient {
+	position: relative;    
+	overflow: hidden;
+
+    &::after {
+        position: absolute;
+        top: 0;    
+        left: 0;   
+        transform: translateX(-100%);
+    
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;    
+        
+        background-color: rgba(51, 51, 51, 0.4);    
+        pointer-events: none;
+        transition: transform 350ms ease-in;
+    }
+
+}
+
+.gradient:hover::after{
+    transform: translateX(0);
+}

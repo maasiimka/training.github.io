@@ -1,13 +1,17 @@
 .hero-section{
     background-color: $main-color;
-    margin-top: 79px;
-    padding-bottom: 30px;
-    padding-top: 523px;
+    padding-bottom: 119px;
     text-align: center;
 
     background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc.jpg);
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
+    max-width: 1920px;
+
+    @media screen and (min-width:1140px) {
+        padding-bottom: 30px;
+    }
+
 }
 
 .hero-title{
@@ -17,18 +21,21 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.36;
-
     margin-bottom: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.line{
-   padding-bottom: 80px; 
-   margin-bottom: 30px;
-   border-bottom: 1px solid $second-color;
+@media screen and (min-width:1140px) {
+      .line{
+        padding-bottom: 80px; 
+        margin-bottom: 30px;
+        border-bottom: 1px solid $second-color; 
+    }  
 }
 
 .partners{
-    display: flex;
+    display: none;
     width: 1110px;
     margin-left: auto;
     margin-right: auto;
@@ -45,5 +52,9 @@
             border: none;
         }
 
+    }
+
+    @media screen and(min-width: 1140px) {
+        display: flex;
     }
 }

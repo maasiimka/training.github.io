@@ -1,4 +1,4 @@
-.post-section{
+.mail-section{
     padding-top: 100px;
     padding-bottom: 120px;
 
@@ -6,17 +6,21 @@
     background-color: $main-color;
 
     background-image: url(../image/background/background2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .mail-container{
     display: flex;
-    align-items: flex-start;
-    width: 773px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 
     &>ul{
+
         list-style: url(../image/pseudo/triangle.svg);
     }
 
@@ -27,14 +31,19 @@
     }
 
     &>div{
-        width: 448px;
+        max-width: 448px;
         border: 1px solid $second-color;
     }
 
+    @media screen and (min-width: 800px){
+        flex-direction: row;
+        align-items: start;
+        width: 773px;
+    }
 }
 
 .form{
-    display: flex;
+    display: block;
     align-items: center;
     margin: 14px 15px;
     padding: 20px 22px;
@@ -43,10 +52,22 @@
     &>input{
         width: 200px;
         height: 45px;
-        margin-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 15px;
         padding-left: 20px;
         border: 1px solid rgba(214, 214, 214, 1);
+
+        @media screen and (min-width: 480px){
+            margin-bottom: 0;
+            margin-right: 15px;
+            margin-left: 0;
+        }
     }
 
+
+    @media screen and (min-width: 480px){
+        display: flex;
+    }
 }
 

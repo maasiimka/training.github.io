@@ -1,3 +1,7 @@
 .logo{
-    margin-left: 126px;
+    display: inline-block;
+    z-index: 2;
+    @media screen and(min-width: 1140px) {
+        margin-left: 126px;
+    }
 }

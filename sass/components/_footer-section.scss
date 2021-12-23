@@ -3,13 +3,18 @@
 }
 
 .footer-list{
-    display: flex;
+    display: block;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 60px;
 
     &>li{
         width: 255px;
         text-align: left;
+    }
+
+    @media screen and (min-width:1140px) {
+        display: flex;
     }
 
 }
@@ -78,6 +83,7 @@
 
 .profiles{
     display: flex;
+    align-items: center;
 
     &>li+li{
         margin-left: 20px;
@@ -86,7 +92,11 @@
 }
 
 .last-line{
-    display: flex;
+    display: block;
     justify-content: space-between;
     border-top: 1px solid $main-color;
+
+    @media screen and (min-width:1140px) {
+        display: flex;
+    }
 }

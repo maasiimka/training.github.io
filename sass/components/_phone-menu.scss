@@ -1,0 +1,22 @@
+.menu-switch{
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+    z-index: 2;
+    border: none;
+    @media screen and (min-width: 426px) {
+        display: none;
+    }
+}
+
+.menu-switch.is-open .menu{
+    display: none;
+}
+
+.cross{
+    display: none;
+}
+
+.menu-switch.is-open .cross{
+    display: block;
+}

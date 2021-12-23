@@ -1,5 +1,9 @@
 .site-nav{
-    display: flex;
+    display: none;
+
+    @media screen and(min-width: 1140px) {
+        display: flex;
+    }
 }
 
 .site-nav a,

@@ -6,9 +6,10 @@
         margin-left: 40px;
     }
 
+    @media screen and(max-width: 1140px) {
+        display: none;
+    }
 }
-
-
 
 .search-icon{
     position: relative;
@@ -72,3 +73,4 @@
 .registration:hover path{
     fill: rgb(182, 182, 182);
 }
+

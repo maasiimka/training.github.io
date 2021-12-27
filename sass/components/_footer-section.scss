@@ -41,6 +41,10 @@
 
 .credit{
     display: flex;
+    & > img {
+        width: 45px;
+        height: 30px;
+    }
 
     &>img+img{
         margin-left: 20px;
@@ -48,35 +52,23 @@
 
 }
 
-.phone-icon{
+.phone{
     display: flex;
     align-items: center;
 
-    &::before{
-        content: "";
-        width: 20px;
-        height: 16px;
+    & > .phone-icon{
         margin-right: 20px;
-    
-        background-image: url(../image/pseudo/phone.svg);
-        background-position: center;
-        background-repeat: no-repeat;
     }
     
 
 }
 
-.mail-icon{
+.mail{
     display: flex;
     align-items: center;
 
-    &::before{
-        content: "";
-        width: 18px;
-        height: 12px;
+    & > .mail-icon{
         margin-right: 21px;
-    
-        background-image: url(../image/pseudo/mail.svg);
     }
 
 }
@@ -86,7 +78,7 @@
     align-items: center;
 
     &>li+li{
-        margin-left: 20px;
+        margin-left: 25px;
     }
 
 }
@@ -99,4 +91,8 @@
     @media screen and (min-width:1140px) {
         display: flex;
     }
+}
+
+.icons-fill{
+    fill: #333333;
 }

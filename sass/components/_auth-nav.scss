@@ -16,36 +16,29 @@
     overflow: hidden;
 }
 
-.search-icon::before,
-.search-icon::after{
-    content:"";
-
+.search-icon .zoom,
+.search-icon .arrow{
+    display: block;
     width: 18px;
     height: 18px;
     margin-right: 16px;
 
-    background-size: contain;
     transition: transform 350ms ease-in;
 }
 
-.search-icon::before{
-    background-image: url(../image/pseudo/zoom.svg);
-}
-
-.search-icon::after{
+.search-icon .arrow{
     position: absolute;
     left: 0;
     top: 17px;
 
-    background-image: url(../image/pseudo/arrow.svg);
     transform: translateY(40px);
 }
 
-.search-icon:hover::before{
+.search-icon:hover .zoom{
     transform: translateY(-40px);
 }
 
-.search-icon:hover::after{
+.search-icon:hover .arrow{
     transform: translateY(0);
 }
 
@@ -66,11 +59,14 @@
     margin-left: 26px;
 }
 
-.registration path{
+.registration .heart-icon,
+.registration .men-icon{
+    fill: #fff;
     transition: fill 300ms ease-in;
 }
 
-.registration:hover path{
+.registration:hover .heart-icon,
+.registration:hover .men-icon{
     fill: rgb(182, 182, 182);
 }
 

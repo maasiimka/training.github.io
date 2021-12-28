@@ -9,6 +9,10 @@
     margin-top: -10px;
     margin-bottom: -10px;
     margin-bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    width: 380px;
 
     & a{
         display: inline-block;
@@ -43,8 +47,15 @@
 
     }
 
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: 425px){
         display: flex;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 560px;
+    }
+
+    @media screen and (min-width: 1140px){
         width: 1110px;
     }
 
@@ -57,6 +68,8 @@
     display: block;
     flex-wrap: wrap;
     margin: -15px;
+    margin-left: auto;
+    margin-right: auto;
 
     & a{
         display: block;
@@ -75,52 +88,129 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
 
-        @media screen and (min-width: 1140px){
+        @media screen and (min-width: 788px){
             width: 350px;
             height: 370px;
             margin: 15px;
         }
     }
 
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: 788px){
         display: flex;
+        width: 760px;
+    }
+
+    @media screen and (min-width: 1140px){
+        width: 1140px;
     }
 
 }
 
 
 .rings{
-    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/rings.jpg);
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/rings1x.jpg);
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/rings2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/rings3x.jpg);
+    }
 }
 
 .earrings{
-    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/earrings.jpg);
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/earrings1x.jpg);
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/earrings2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/earrings3x.jpg);
+    }
 }
 
 .pendants{
-    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/pendants.jpg);
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/pendants1x.jpg);
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/pendants2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/pendants3x.jpg);
+    }
 }
 
 .cufflinks{
-    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/cufflinks.jpg);
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/cufflinks1x.jpg);
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/cufflinks2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/cufflinks3x.jpg);
+    }
 }
 
 .bracelets{
-    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/bracelets.jpg);
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/bracelets1x.jpg);
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/bracelets2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/bracelets3x.jpg);
+    }
 }
 
 .watches{
-    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/watches.jpg);
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/watches1x.jpg);
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/watches2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/catalogue/watches3x.jpg);
+    }
 }

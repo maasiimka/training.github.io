@@ -5,9 +5,21 @@
     color: $second-color;
     background-color: $main-color;
 
-    background-image: url(../image/background/background2.jpg);
+    background-image: url(../image/background/bg1x.jpg);
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: url(../image/background/bg2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: url(../image/background/bg3x.jpg);
+    }
 }
 
 .mail-container{

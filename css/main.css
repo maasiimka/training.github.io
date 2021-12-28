@@ -416,11 +416,13 @@ img {
           align-items: center;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 1139px) {
   .header {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -442,7 +444,7 @@ img {
   border: transparent;
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 425px) {
   .menu-switch {
     display: none;
   }
@@ -470,6 +472,12 @@ img {
   height: 650px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#333333));
   background-image: linear-gradient(#333333);
+}
+
+@media screen and (max-width: 425px) {
+  .phone-nav.is-open {
+    display: block;
+  }
 }
 
 .phone-nav > :first-child {
@@ -513,10 +521,6 @@ img {
   margin-left: 0;
 }
 
-.menu-switch.is-open + .phone-nav {
-  display: block;
-}
-
 .icons-phone {
   fill: #fff;
 }
@@ -525,7 +529,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 425px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -563,6 +567,12 @@ img {
 .logo {
   display: inline-block;
   z-index: 2;
+}
+
+@media screen and (min-width: 425px) and (max-width: 1139px) {
+  .logo {
+    margin-right: 20px;
+  }
 }
 
 @media screen and (min-width: 1140px) {
@@ -660,8 +670,10 @@ img {
   background-color: #333333;
   padding-bottom: 119px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.87)), to(rgba(51, 51, 51, 0.87))), url(../image/background/bgc.jpg);
-  background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.87)), to(rgba(51, 51, 51, 0.87))), url(../image/background/bgc1x.jpg);
+  background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc1x.jpg);
   background-position: center;
   background-size: cover;
   max-width: 1920px;
@@ -670,6 +682,20 @@ img {
 @media screen and (min-width: 1140px) {
   .hero-section {
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.87)), to(rgba(51, 51, 51, 0.87))), url(../image/background/bgc2x.jpg);
+    background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.87)), to(rgba(51, 51, 51, 0.87))), url(../image/background/bgc3x.jpg);
+    background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc3x.jpg);
   }
 }
 
@@ -732,6 +758,10 @@ img {
   margin-top: -10px;
   margin-bottom: -10px;
   margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  width: 380px;
 }
 
 .category-list a {
@@ -764,11 +794,22 @@ img {
           box-shadow: none;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 425px) {
   .category-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .category-list {
+    width: 560px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .category-list {
     width: 1110px;
   }
 }
@@ -778,6 +819,8 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .catalog-list a {
@@ -797,7 +840,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 788px) {
   .catalog-list a {
     width: 350px;
     height: 370px;
@@ -805,54 +848,145 @@ img {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 788px) {
   .catalog-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 760px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .catalog-list {
+    width: 1140px;
   }
 }
 
 .rings {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/rings.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/rings.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/rings1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/rings1x.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .rings {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/rings2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/rings2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .rings {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/rings3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/rings3x.jpg);
+  }
 }
 
 .earrings {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/earrings.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/earrings.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/earrings1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/earrings1x.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .earrings {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/earrings2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/earrings2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .earrings {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/earrings3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/earrings3x.jpg);
+  }
 }
 
 .pendants {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/pendants.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/pendants.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/pendants1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/pendants1x.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .pendants {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/pendants2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/pendants2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .pendants {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/pendants3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/pendants3x.jpg);
+  }
 }
 
 .cufflinks {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/cufflinks.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/cufflinks.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/cufflinks1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/cufflinks1x.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .cufflinks {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/cufflinks2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/cufflinks2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .cufflinks {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/cufflinks3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/cufflinks3x.jpg);
+  }
 }
 
 .bracelets {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/bracelets.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/bracelets.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/bracelets1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/bracelets1x.jpg);
   background-size: cover;
   background-position: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .bracelets {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/bracelets2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/bracelets2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .bracelets {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/bracelets3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/bracelets3x.jpg);
+  }
+}
+
 .watches {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/watches.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/watches.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/watches1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/watches1x.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .watches {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/watches2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/watches2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .watches {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/catalogue/watches3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/catalogue/watches3x.jpg);
+  }
 }
 
 .shop-section {
@@ -860,13 +994,25 @@ img {
   padding-bottom: 100px;
   color: #fff;
   background-color: #333333;
-  background-image: url(../image/background/background1.jpg);
-  background-position: 50%;
-  background-size: auto;
+  background-image: url(../image/background/background1x.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .shop-section .text {
   margin-bottom: 60px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .shop-section {
+    background-image: url(../image/background/background2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .shop-section {
+    background-image: url(../image/background/background3x.jpg);
+  }
 }
 
 .blog-section {
@@ -905,8 +1051,8 @@ img {
   background-color: #333333;
   font-size: 21px;
   line-height: 1.4;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/manCufflincs.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/manCufflincs1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs1x.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -925,6 +1071,20 @@ img {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .article-list a {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/manCufflincs2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .article-list a {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/manCufflincs3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs3x.jpg);
+  }
+}
+
 @media screen and (min-width: 1140px) {
   .article-list {
     display: -webkit-box;
@@ -934,24 +1094,45 @@ img {
 }
 
 .article-list > :first-child a {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/wifeWatches.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/wifeWatches1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches1x.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .article-list > :first-child a {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/wifeWatches2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .article-list > :first-child a {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/wifeWatches3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches3x.jpg);
+  }
 }
 
 .article-list > :last-child a {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/weedingRings.jpg);
-  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/weedingRings1x.jpg);
+  background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings1x.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .article-list > :last-child a {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/weedingRings2x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .article-list > :last-child a {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#333333), to(rgba(180, 180, 180, 0))), url(../image/wedding/weedingRings3x.jpg);
+    background-image: linear-gradient(to top, #333333, rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings3x.jpg);
+  }
 }
 
 .social-section {
-  display: none;
   padding-bottom: 150px;
-}
-
-@media screen and (min-width: 1140px) {
-  .social-section {
-    display: block;
-  }
 }
 
 .social-list {
@@ -960,6 +1141,42 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 425px) {
+  .social-list {
+    background-color: #916f58;
+  }
+  .social-list li {
+    width: 50%;
+  }
+  .social-list :first-child,
+  .social-list :last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 1139px) {
+  .social-list {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #916f58;
+  }
+  .social-list li {
+    width: 50%;
+  }
+  .social-list :first-child,
+  .social-list :last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .social-list img {
+    height: 300px;
+    width: auto;
+  }
 }
 
 .gradient {
@@ -1001,9 +1218,21 @@ img {
   padding-bottom: 120px;
   color: #fff;
   background-color: #333333;
-  background-image: url(../image/background/background2.jpg);
+  background-image: url(../image/background/bg1x.jpg);
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .mail-section {
+    background-image: url(../image/background/bg2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .mail-section {
+    background-image: url(../image/background/bg3x.jpg);
+  }
 }
 
 .mail-container {
@@ -1109,11 +1338,18 @@ img {
   text-align: left;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 600px) {
   .footer-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .footer-list {
+    width: 1110px;
   }
 }
 
@@ -1130,6 +1366,13 @@ img {
   line-height: 1.4;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 425px) {
+  .footer-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 .double-list > li + li {

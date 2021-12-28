@@ -13,10 +13,14 @@
         text-align: left;
     }
 
-    @media screen and (min-width:1140px) {
+    @media screen and (min-width: 600px) {
         display: flex;
+        width: 570px;
     }
 
+    @media screen and (min-width: 1140px) {
+        width: 1110px;
+    }
 }
 
 .footer-title{
@@ -33,6 +37,11 @@
     line-height: 1.4;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+
+    @media screen and (max-width:425px){
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 }
 
 .double-list>li+li{

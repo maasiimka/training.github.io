@@ -25,7 +25,7 @@
                             <use href="./image/symbol-defs.svg#icon-cross"></use>
                         </svg>
                     </button>
-                    <ul class="phone-nav">
+                    <ul class="phone-nav" data-menu>
                         <li><a href="">Контагентам</a></li>
                         <li><a href="">Дизайнерам</a></li>
                         <li><a href="">Вакансии</a></li>
@@ -184,12 +184,12 @@
                 <p class="subtitle">#ojjo_jewerly</p>
                 <h2 class="title">Мы в социальных сетях</h2>
                 <ul class="social-list">
-                    <li class="gradient"><img src="./image/gallery/video1.jpg" alt="" width="555" height="300"></li>
-                    <li class="gradient"><img src="./image/gallery/image1.jpg" alt="" width="278" height="300"></li>
-                    <li class="gradient"><img src="./image/gallery/image2.jpg" alt="" width="277" height="300"></li>
-                    <li class="gradient"><img src="./image/gallery/image3.jpg" alt="" width="278" height="300"></li>
-                    <li class="gradient"><img src="./image/gallery/image4.jpg" alt="" width="277" height="300"></li>
-                    <li class="gradient"><img src="./image/gallery/video2.jpg" alt="" width="555" height="300"></li>
+                    <li class="gradient"><img srcset="./image/gallery/necklace1x.jpg 555w , ./image/gallery/necklace2x.jpg 1110w , ./image/gallery/necklace3x.jpg 1665w" src="./image/gallery/necklace1x.jpg" alt="neclace"></li>
+                    <li class="gradient"><img srcset="./image/gallery/glacces1x.jpg 555w , ./image/gallery/glacces2x.jpg 1110w , ./image/gallery/glacces3x.jpg 1665w" src="./image/gallery/glacces1x.jpg" alt="glacces"></li>
+                    <li class="gradient"><img srcset="./image/gallery/crystal1x.jpg 555w , ./image/gallery/crystal2x.jpg 1110w , ./image/gallery/crystal3x.jpg 1665w" src="./image/gallery/crystal1x.jpg" alt="crystal"></li>
+                    <li class="gradient"><img srcset="./image/gallery/ring1x.jpg 555w , ./image/gallery/ring2x.jpg 1110w , ./image/gallery/ring3x.jpg 1665w" src="./image/gallery/ring1x.jpg" alt="ring"></li>
+                    <li class="gradient"><img srcset="./image/gallery/watch1x.jpg 555w , ./image/gallery/watch2x.jpg 1110w , ./image/gallery/watch3x.jpg 1665w" src="./image/gallery/watch1x.jpg" alt="watch"></li>
+                    <li class="gradient"><img srcset="./image/gallery/hands1x.jpg 555w , ./image/gallery/hands2x.jpg 1110w , ./image/gallery/hands3x.jpg 1665w" src="./image/gallery/hands1x.jpg" alt="hands"></li>
                 </ul>
             </div>
         </section>
@@ -332,11 +332,17 @@
 
       <script>
         (() => {
-        const menuBtnRef = document.querySelector("[data-menu-button]");
+            const menuBtnRef = document.querySelector("[data-menu-button]");
+            const mobileMenuRef = document.querySelector("[data-menu]");
 
-        menuBtnRef.addEventListener("click", () => {
+            menuBtnRef.addEventListener("click", () => {
+                const expanded =
+                    menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
-            menuBtnRef.classList.toggle("is-open");
+                menuBtnRef.classList.toggle("is-open");
+                menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+                mobileMenuRef.classList.toggle("is-open");
         });
         })();
       </script>

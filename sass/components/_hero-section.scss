@@ -2,8 +2,10 @@
     background-color: $main-color;
     padding-bottom: 119px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
-    background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc.jpg);
+    background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc1x.jpg);
     background-position: center;
     background-size: cover;
     max-width: 1920px;
@@ -12,6 +14,17 @@
         padding-bottom: 30px;
     }
 
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../image/background/bgc3x.jpg);
+    }
 }
 
 .hero-title{

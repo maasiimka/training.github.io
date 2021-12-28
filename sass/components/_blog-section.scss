@@ -32,7 +32,7 @@
         font-size: 21px;
         line-height: 1.4;
     
-        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs.jpg);
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs1x.jpg);
         background-size: cover;
         background-position: center;
 
@@ -45,6 +45,18 @@
             width: 350px;
             height: 370px;
         }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx){
+            background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs2x.jpg);
+        }
+    
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx){
+            background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/manCufflincs3x.jpg);
+        }
     }
 
     @media screen and (min-width: 1140px){
@@ -54,9 +66,33 @@
 }
 
 .article-list>:first-child a{
-    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches.jpg);
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/wifeWatches3x.jpg);
+    }
 }
 
 .article-list>:last-child a{
-    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings.jpg);
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx){
+        background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(180, 180, 180, 0)), url(../image/wedding/weedingRings3x.jpg);
+    }
 }

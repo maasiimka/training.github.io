@@ -8,9 +8,9 @@
     flex-direction: row-reverse;
     align-items: center;
 
-    @media screen and(max-width: 426px) {  
-        justify-content: space-around;
-        width: 100%;
+    @media screen and(max-width: 1139px) {  
+        justify-content: space-evenly;
+        flex-wrap: wrap;
         }
 
     @media screen and(min-width: 1140px) { 

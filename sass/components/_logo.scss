@@ -1,6 +1,11 @@
 .logo{
     display: inline-block;
     z-index: 2;
+
+    @media screen and(min-width: 425px) and (max-width: 1139px) {
+        margin-right: 20px;
+    }
+
     @media screen and(min-width: 1140px) {
         margin-left: 126px;
     }

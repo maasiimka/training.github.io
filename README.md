@@ -1,1 +1,1 @@
-# training.github.io
+## Only layout without js
